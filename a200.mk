@@ -16,9 +16,8 @@
 
 # ramdisk
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/ramdisk/init.picasso_e.rc:root/init.picasso_e.rc \
     $(LOCAL_PATH)/prebuilt/ramdisk/init.picasso_e.usb.rc:root/init.picasso_e.usb.rc \
-    $(LOCAL_PATH)/prebuilt/ramdisk/ueventd.picasso_e.rc:root/ueventd.picasso_e.rc \
+    $(LOCAL_PATH)/prebuilt/ramdisk/ueventd.picasso_e.rc:root/ueventd.picasso_e.rc
 
 # prebuilt configs
 PRODUCT_COPY_FILES += \
@@ -26,9 +25,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/prebuilt/usr/idc/acer-touch.idc:system/usr/idc/acer-touch.idc \
     $(LOCAL_PATH)/prebuilt/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carrier=wifi-only
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
